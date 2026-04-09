@@ -1,0 +1,235 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* NAVBAR */
+header {
+    background-color: #0c0c0c;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+   
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* HOME SECTION */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: url('images/home-bg.jpg/home-bg.jpg.jpg') no-repeat center center/cover;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home-content .btn {
+    background-color: #fffffb;
+    color: #080808;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.home-content .btn:hover {
+    background-color: #ffecec;
+}
+
+/* MENU SECTION */
+section h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #f8f5f5;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-overlay {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-overlay h3 {
+    color: #0c0c0c;
+    margin-bottom: 10px;
+}
+
+.card-overlay p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-overlay .btn {
+    background-color: #080808;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.card-overlay .btn:hover {
+    background-color: #111111;
+}
+
+/* ORDER FORM */
+#order {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgb(17, 17, 17);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#order input, #order select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#order button {
+    background-color: #f5f5f1;
+    color: rgb(5, 5, 5);
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#order button:hover {
+    background-color: #ff4757;
+}
+
+/* ABOUT SECTION */
+.about h2, .contact h2 {
+    color: #000; /* heading black too */
+}
+
+.about, .contact {
+    color:#030303;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color:#fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.about p, .contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+    
+    .menu {
+        gap: 20px;
+        padding: 20px;
+    }
+}

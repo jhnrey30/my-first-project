@@ -1,9 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSamek Tuna Pie Shop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello World!</h1>
+
+<!-- NAVBAR -->
+<header>
+    <h1>SuperSamek Tuna Pie Shop</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <div class="home-content">
+        <h2>Delicious Tuna Pies Made Fresh Daily</h2>
+        <p>Enjoy crispy, creamy, and affordable snacks made with love.</p>
+        <a href="#order" 
+        class="btn">Order Now</a>
+    </div>
+</section>
+<!-- MENU SECTION -->
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu">
+        <div class="card">
+            <img src="images/tuna-pie.jpg/tuna-pie.jpg.jpg" alt="Tuna Pie">
+            <div class="card-overlay">
+                <h3>Tuna Pie</h3>
+                <p>₱25</p>
+                <a href="#order" class="btn">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/fruit-tea.jpg/fruit-tea.jpg.jpg" alt="Fruit Tea">
+            <div class="card-overlay">
+                <h3>Fruit Tea</h3>
+                <p>₱30</p>
+                <a href="#order" class="btn">Order</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/softdrinks.jpg/softdrinks.jpg.jpg" alt="Soft Drinks">
+            <div class="card-overlay">
+                <h3>Soft Drinks</h3>
+                <p>₱20</p>
+                <a href="#order" class="btn">Order</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ORDER SECTION -->
+
+    <section id="order">
+    <h2>Order Now</h2>
+    <form id="orderForm">
+        <input type="text" id="customerName" placeholder="Your Name" required><br><br>
+
+        <select id="productSelect" required>
+            <option value="">Select Product</option>
+            <option value="Tuna Pie">Tuna Pie</option>
+            <option value="Fruit Tea">Fruit Tea</option>
+            <option value="Soft Drinks">Soft Drinks</option>
+        </select><br><br>
+
+        <select id="productOption" required>
+            <option value="">Select Option</option>
+        </select><br><br>
+
+        <input type="number" id="quantity" placeholder="Quantity" min="1" value="1" required><br><br>
+
+        <p>Total Price: ₱<span id="totalPrice">0</span></p><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+</section>
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Our Tuna Pie Shop is a small local business dedicated to serving 
+        delicious and affordable snacks. We focus on quality, freshness, 
+        and customer satisfaction.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 0954-499-3816</p>
+    <p>📍 Quezon City University San Bartolome</p>
+    <p>📧 ygot.johnrey.tacurda1@gmail.com</p>
+</section>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Order submitted! We will contact you soon.");
+});
+</script>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Tuna Pie Shop</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
